@@ -1,0 +1,34 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Totem do Retorno (BP)",
+    "description": "Totem comestível que leva o jogador de volta ao seu spawnpoint.",
+    "uuid": "86396bf9-145d-46ae-bd62-5e3ff9dfbfcd",
+    "version": [1, 2, 1],
+    "min_engine_version": [1, 21, 90]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "3029a28b-06fa-453a-931b-35628a11d9d9",
+      "version": [1, 2, 1]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "77c3a9c9-cc48-4582-8791-72fca77c7f15",
+      "entry": "scripts/main.js",
+      "version": [1, 2, 1]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "34f70f7f-ac3d-4e68-ab23-227c99d9ca4c",
+      "version": [1, 2, 1]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    }
+  ]
+}

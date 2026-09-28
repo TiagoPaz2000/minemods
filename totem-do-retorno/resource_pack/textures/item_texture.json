@@ -1,0 +1,9 @@
+{
+  "resource_pack_name": "totem_do_retorno",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "minemods_totem_do_retorno": {
+      "textures": "textures/items/totem_do_retorno"
+    }
+  }
+}
