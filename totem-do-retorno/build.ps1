@@ -35,3 +35,9 @@ try {
     $zip.Dispose()
 }
 Write-Host "Gerado: $out"
+
+# Cópia com nome fixo, versionada no Git: é o alvo do link de download no README.
+$download = Join-Path $root 'download'
+New-Item -ItemType Directory -Force $download | Out-Null
+Copy-Item $out (Join-Path $download 'totem-do-retorno.mcaddon') -Force
+Write-Host "Atualizado: $download\totem-do-retorno.mcaddon"

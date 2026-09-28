@@ -1,8 +1,10 @@
 # Totem do Retorno
 
-**Versão atual:** 1.6.2
+**Versão atual:** 1.6.3
 **Criador:** tubbinho
 **Plataforma:** Minecraft Bedrock Edition 1.21.90+ (celular, PC e consoles: o add-on é o mesmo em todos)
+
+### [⬇️ Baixar a última versão (.mcaddon)](https://github.com/TiagoPaz2000/minemods/raw/main/totem-do-retorno/download/totem-do-retorno.mcaddon)
 
 ## Objetivo
 
@@ -33,8 +35,9 @@ A receita já vem desbloqueada para todos os jogadores (`"unlock": { "context": 
 totem-do-retorno/
 ├── arte/                 # arte original do totem e capa (fora do .mcaddon)
 ├── behavior_pack/        # item, receita e script (@minecraft/server 2.0.0)
+├── download/             # totem-do-retorno.mcaddon: última versão, alvo do link de download
 ├── resource_pack/        # textura, nomes (pt_BR / en_US)
-└── build.ps1             # gera dist/totem-do-retorno-<versao>.mcaddon
+└── build.ps1             # gera dist/totem-do-retorno-<versao>.mcaddon e atualiza download/
 ```
 
 A capa do mod é o `pack_icon.png` (256x256), que fica na raiz dos dois packs. A mesma imagem também está guardada em `arte/capa.png`.
@@ -47,8 +50,8 @@ O ícone do item (`resource_pack/textures/items/totem_do_retorno.png`) tem **32x
 
 ## Como instalar
 
-1. No PC, rode `powershell -ExecutionPolicy Bypass -File build.ps1`. O arquivo sai em `dist/`.
-2. Passe o `.mcaddon` para o celular e abra com o Minecraft. Ele importa os dois packs sozinho.
+1. Baixe o `.mcaddon` pelo link **Baixar a última versão** no topo deste README. No iPhone, dá para abrir o link direto no Safari. Outra opção é gerar o arquivo no PC com `powershell -ExecutionPolicy Bypass -File build.ps1`.
+2. Abra o `.mcaddon` com o Minecraft. Ele importa os dois packs sozinho.
 3. Nas configurações do mundo, ative o **Behavior Pack** "Totem do Retorno (BP)". O Resource Pack é ativado junto. Não precisa ligar nenhum experimento.
 
 ## Como atualizar para uma versão nova
@@ -70,7 +73,12 @@ A cada mudança, incremente a versão nestes lugares (sempre com o mesmo número
 
 O `build.ps1` confere tudo isso, exceto o changelog, e cancela o build se alguma versão estiver diferente.
 
+Depois de mudar a versão, rode o `build.ps1` e **inclua `download/totem-do-retorno.mcaddon` no commit**. Senão o link de download continua entregando a versão anterior.
+
 ## Changelog
+
+### 1.6.3 (2026-09-28)
+- Link de download da última versão no README. O `build.ps1` agora também grava `download/totem-do-retorno.mcaddon` (nome fixo, versionado no Git), que é o alvo do link.
 
 ### 1.6.2 (2026-09-28)
 - Correção da receita: o `unlock` estava como lista (`[{ "context": ... }]`), e o jogo acusava "invalid unlock ingredient" e "recipe ingredient is invalid". Com isso a receita ficava bloqueada e só aparecia pela busca. Agora `unlock` é um objeto, como nas receitas vanilla.
