@@ -2,7 +2,7 @@
 
 <img src="arte/capa.png" alt="Capa do Totem do Retorno" width="256">
 
-**Versão atual:** 1.6.4
+**Versão atual:** 1.6.5
 **Criador:** tubbinho
 **Plataforma:** Minecraft Bedrock Edition 1.21.90+ (celular, PC e consoles: o add-on é o mesmo em todos)
 
@@ -23,6 +23,8 @@ Adiciona o **Totem do Retorno**, um item que se usa como comida. Quando você te
 
 ### Receita (bancada de trabalho)
 
+<img src="arte/receita.png" alt="Receita do Totem do Retorno na bancada de trabalho" width="320">
+
 | | | |
 |:-:|:-:|:-:|
 | Osso | Osso | Osso |
@@ -35,7 +37,7 @@ A receita já vem desbloqueada para todos os jogadores (`"unlock": { "context": 
 
 ```
 totem-do-retorno/
-├── arte/                 # arte original do totem e capa (fora do .mcaddon)
+├── arte/                 # arte original do totem, capa e imagem da receita (fora do .mcaddon)
 ├── behavior_pack/        # item, receita e script (@minecraft/server 2.0.0)
 ├── download/             # totem-do-retorno.mcaddon: última versão, alvo do link de download
 ├── resource_pack/        # textura, nomes (pt_BR / en_US)
@@ -78,6 +80,9 @@ O `build.ps1` confere tudo isso, exceto o changelog, e cancela o build se alguma
 Depois de mudar a versão, rode o `build.ps1` e **inclua `download/totem-do-retorno.mcaddon` no commit**. Senão o link de download continua entregando a versão anterior.
 
 ## Changelog
+
+### 1.6.5 (2026-09-28)
+- Imagem da receita na bancada (`arte/receita.png`) na seção Receita deste README.
 
 ### 1.6.4 (2026-09-28)
 - Capa do mod exibida no topo deste README.
