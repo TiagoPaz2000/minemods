@@ -1,6 +1,8 @@
 # Totem do Retorno
 
-**Versão atual:** 1.6.3
+<img src="arte/capa.png" alt="Capa do Totem do Retorno" width="256">
+
+**Versão atual:** 1.6.4
 **Criador:** tubbinho
 **Plataforma:** Minecraft Bedrock Edition 1.21.90+ (celular, PC e consoles: o add-on é o mesmo em todos)
 
@@ -76,6 +78,9 @@ O `build.ps1` confere tudo isso, exceto o changelog, e cancela o build se alguma
 Depois de mudar a versão, rode o `build.ps1` e **inclua `download/totem-do-retorno.mcaddon` no commit**. Senão o link de download continua entregando a versão anterior.
 
 ## Changelog
+
+### 1.6.4 (2026-09-28)
+- Capa do mod exibida no topo deste README.
 
 ### 1.6.3 (2026-09-28)
 - Link de download da última versão no README. O `build.ps1` agora também grava `download/totem-do-retorno.mcaddon` (nome fixo, versionado no Git), que é o alvo do link.
