@@ -2,16 +2,16 @@
   "format_version": 2,
   "header": {
     "name": "Totem do Retorno (RP)",
-    "description": "v1.6.0 - Recursos visuais do Totem do Retorno. Criado por tubbinho.",
+    "description": "v1.6.2 - Recursos visuais do Totem do Retorno. Criado por tubbinho.",
     "uuid": "34f70f7f-ac3d-4e68-ab23-227c99d9ca4c",
-    "version": [1, 6, 0],
+    "version": [1, 6, 2],
     "min_engine_version": [1, 21, 90]
   },
   "modules": [
     {
       "type": "resources",
       "uuid": "bb4e6b7c-2837-42f5-82b3-60db1ca3f53d",
-      "version": [1, 6, 0]
+      "version": [1, 6, 2]
     }
   ],
   "metadata": {

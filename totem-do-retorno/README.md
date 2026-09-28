@@ -1,6 +1,6 @@
 # Totem do Retorno
 
-**Versão atual:** 1.6.0
+**Versão atual:** 1.6.2
 **Criador:** tubbinho
 **Plataforma:** Minecraft Bedrock Edition 1.21.90+ (celular, PC e consoles: o add-on é o mesmo em todos)
 
@@ -25,7 +25,7 @@ Adiciona o **Totem do Retorno**, um item que se usa como comida. Quando você te
 | Redstone | Couro | Redstone |
 | | Barra de ouro | |
 
-A receita é desbloqueada automaticamente para cada jogador ao entrar no mundo. Ela aparece no final da aba **Equipamentos** do livro de receitas e também pela busca.
+A receita já vem desbloqueada para todos os jogadores (`"unlock": { "context": "AlwaysUnlocked" }`, o mesmo formato da bancada de trabalho vanilla). O item é registrado na aba **Equipamentos** (inventário criativo e livro de receitas) pelo `behavior_pack/item_catalog/crafting_item_catalog.json`, no final da aba. Ele também aparece pela busca.
 
 ## Estrutura
 
@@ -71,6 +71,13 @@ A cada mudança, incremente a versão nestes lugares (sempre com o mesmo número
 O `build.ps1` confere tudo isso, exceto o changelog, e cancela o build se alguma versão estiver diferente.
 
 ## Changelog
+
+### 1.6.2 (2026-09-28)
+- Correção da receita: o `unlock` estava como lista (`[{ "context": ... }]`), e o jogo acusava "invalid unlock ingredient" e "recipe ingredient is invalid". Com isso a receita ficava bloqueada e só aparecia pela busca. Agora `unlock` é um objeto, como nas receitas vanilla.
+- Removido o `/recipe give` automático ao entrar no mundo (1.5.1). Ele era um remendo para esse mesmo erro e ficou desnecessário.
+
+### 1.6.1 (2026-09-28)
+- Item registrado no catálogo de itens (`item_catalog/crafting_item_catalog.json`), na aba Equipamentos. Antes o totem só aparecia pela busca do livro de receitas, em nenhuma aba.
 
 ### 1.6.0 (2026-09-28)
 - Punição por usar o totem: náusea por 1 minuto depois de comer (antes a náusea sumia ao terminar de comer).

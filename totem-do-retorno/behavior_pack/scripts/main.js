@@ -8,17 +8,6 @@ const MAX_TICKS_ESPERA = 100;
 // Vermelho das gemas do totem (RGB de 0 a 1).
 const VERMELHO_TOTEM = { red: 0.75, green: 0.05, blue: 0.05 };
 
-// Ao entrar no mundo: desbloqueia a receita para o jogador, senão ela só aparece
-// pela busca do livro de receitas e não na aba Equipamentos.
-world.afterEvents.playerSpawn.subscribe(({ player, initialSpawn }) => {
-  if (!initialSpawn) return;
-  try {
-    player.runCommand(`recipe give @s ${TOTEM_ID}`);
-  } catch {
-    // Receita já desbloqueada.
-  }
-});
-
 // Jogadores que estão comendo o totem agora (ids), para limpar o efeito ao parar.
 const comendo = new Set();
 
