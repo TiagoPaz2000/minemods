@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "minemods:dardo_envenenado"
+    },
+    "tags": ["crafting_table"],
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    },
+    "ingredients": [
+      { "item": "minemods:dardo" },
+      { "item": "minecraft:spider_eye" }
+    ],
+    "result": {
+      "item": "minemods:dardo_envenenado",
+      "count": 1
+    }
+  }
+}

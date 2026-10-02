@@ -1,0 +1,5 @@
+item.minemods:zarabatana=Bamboo Blowgun
+item.minemods:dardo=Dart
+item.minemods:dardo_envenenado=Poison Dart
+entity.minemods:dardo.name=Dart
+entity.minemods:dardo_envenenado.name=Poison Dart

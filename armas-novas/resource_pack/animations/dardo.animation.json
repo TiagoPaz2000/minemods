@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.minemods.dardo.move": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [ "variable.shake_power + query.property('minemods:inclinacao')", "query.property('minemods:direcao')", 0.0 ],
+          "scale": [ 0.7, 0.7, 0.9 ]
+        }
+      }
+    }
+  }
+}

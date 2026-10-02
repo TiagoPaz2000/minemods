@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10",
+  "render_controllers": {
+    "controller.render.minemods.zarabatana": {
+      "arrays": {
+        "textures": {
+          "array.texturas": [ "texture.default", "texture.mirando" ]
+        },
+        "geometries": {
+          "array.geometrias": [ "geometry.default", "geometry.mirando" ]
+        }
+      },
+      "geometry": "array.geometrias[variable.mirando]",
+      "materials": [ { "*": "material.default" } ],
+      "textures": [ "array.texturas[variable.mirando]" ]
+    }
+  }
+}

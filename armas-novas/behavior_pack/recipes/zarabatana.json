@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "minemods:zarabatana"
+    },
+    "tags": ["crafting_table"],
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    },
+    "pattern": [
+      "B  ",
+      " B ",
+      "  B"
+    ],
+    "key": {
+      "B": { "item": "minecraft:bamboo" }
+    },
+    "result": {
+      "item": "minemods:zarabatana",
+      "count": 1
+    }
+  }
+}

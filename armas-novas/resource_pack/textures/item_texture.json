@@ -1,0 +1,15 @@
+{
+  "resource_pack_name": "armas_novas",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "minemods_zarabatana": {
+      "textures": "textures/items/zarabatana"
+    },
+    "minemods_dardo": {
+      "textures": "textures/items/dardo"
+    },
+    "minemods_dardo_envenenado": {
+      "textures": "textures/items/dardo_envenenado"
+    }
+  }
+}

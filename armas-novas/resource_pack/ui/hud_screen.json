@@ -1,0 +1,52 @@
+{
+  "namespace": "hud",
+
+  // Mira da zarabatana no centro da tela. O script manda o título 'minemods:mira' enquanto o
+  // jogador (no toque) puxa a zarabatana; esta imagem aparece só enquanto o título for esse.
+  "minemods_mira": {
+    "type": "image",
+    "texture": "textures/ui/minemods_mira",
+    "size": [ 15, 15 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 30,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string",
+        "binding_type": "global"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string = 'minemods:mira')",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          { "minemods_mira@hud.minemods_mira": {} }
+        ]
+      }
+    ]
+  },
+
+  // Os títulos de sinal do add-on nunca aparecem como texto na tela.
+  "hud_title_text": {
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string",
+        "binding_type": "global"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not ((#hud_title_text_string = 'minemods:mira') or (#hud_title_text_string = 'minemods:sem_mira')))",
+        "target_property_name": "#visible"
+      }
+    ]
+  }
+}
